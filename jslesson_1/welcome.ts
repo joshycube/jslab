@@ -19,11 +19,11 @@ interface ICoordinates {
 
 function moveItemOnScreen(obj: any, to: ICoordinates): string {
   if (obj === "human") {
-    return "Move human";
+    return `Move human to ${to.x} ${to.y}`;
   } else {
-    return "Move object";
+    return `Move object to ${to.x} ${to.y}`;
   }
 }
 
-const result = moveItemOnScreen("human", { x: 0, y: 0 });
-console.log(result);
+const res = moveItemOnScreen("human", { x: 0, y: 0 });
+console.log(res);

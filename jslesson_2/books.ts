@@ -1,4 +1,4 @@
-import library from "./library";
+import library from "./resources/library";
 
 const genre = ["science-fiction", "fiction", "drama", "fantasy"];
 
