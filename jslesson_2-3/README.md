@@ -19,7 +19,7 @@
 
 ### Simple structures and loops (array, object, for loops)
 
-We are using JSON structures instead of an SQL DB for the sole purpose of learning loopss
+We are using JSON structures instead of an SQL DB for the sole purpose of learning loops
 
 ```
 const genre = ['science fiction', 'fiction', 'drama', 'fantasy'];
