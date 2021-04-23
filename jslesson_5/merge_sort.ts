@@ -12,7 +12,7 @@ function merge(left: number[], right: number[]): number[] {
     `${sign} merge() was called with arrays: ${left} and ${right} for the ${m}x time(s)`
   );
 
-  chainOfActions += "merge()=>";
+  chainOfActions += `merge(left: ${left.toString()} right: ${right.toString()})=>`;
 
   const temp: number[] = [];
 
@@ -44,7 +44,7 @@ function mergeSort(subject: number[], side: string = "both"): number[] {
     }x time(s)`
   );
 
-  chainOfActions += `mergeSort[${side}]()=>`;
+  chainOfActions += `mergeSort[${side}](${subject.toString()})=>`;
 
   if (arrayLength < 2) {
     return subject;
@@ -59,6 +59,9 @@ function mergeSort(subject: number[], side: string = "both"): number[] {
 }
 
 const resultSorted = mergeSort(sortMe);
+
+chainOfActions += `${resultSorted}`;
+
 console.log(resultSorted);
 
 console.log(
