@@ -3,6 +3,7 @@ const sortMe = [78, 83, 54, 20];
 let m = 0;
 let l = 0;
 let r = 0;
+let chainOfActions: string = "";
 
 function merge(left: number[], right: number[]): number[] {
   m++;
@@ -10,6 +11,8 @@ function merge(left: number[], right: number[]): number[] {
   console.log(
     `${sign} merge() was called with arrays: ${left} and ${right} for the ${m}x time(s)`
   );
+
+  chainOfActions += "merge()=>";
 
   const temp: number[] = [];
 
@@ -41,6 +44,8 @@ function mergeSort(subject: number[], side: string = "both"): number[] {
     }x time(s)`
   );
 
+  chainOfActions += `mergeSort[${side}]()=>`;
+
   if (arrayLength < 2) {
     return subject;
   }
@@ -59,3 +64,5 @@ console.log(resultSorted);
 console.log(
   `merge sort was called ${l + r} times and merge was called ${m} times`
 );
+
+console.log(chainOfActions);
