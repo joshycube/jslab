@@ -37,3 +37,5 @@ merge() was called with arrays: 78,83 and 20,54 for the 3x time(s)
 => merge() has returned: [20,54,78,83]
 (4) [20, 54, 78, 83]
 merge sort was called 7 times and merge was called 3 times
+
+mergeSort[both](78,83,54,20)=>mergeSort[left](78,83)=>mergeSort[left](78)=>mergeSort[right](83)=>merge(left: 78 right: 83)=>mergeSort[right](54,20)=>mergeSort[left](54)=>mergeSort[right](20)=>merge(left: 54 right: 20)=>merge(left: 78,83 right: 20,54)=>20,54,78,83
