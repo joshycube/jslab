@@ -1,7 +1,7 @@
 ### How to run
 
 ```
-tsc myfile.ts
+tsc myfile.ts --module commonjs
 node myfile.js
 ```
 
