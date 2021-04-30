@@ -1,6 +1,6 @@
 # Welcome
 
-## Lesson 2 - data structures and loops III/I
+## Lesson 2-3 - data structures and loops III/I
 
 ### Let's revise
 
